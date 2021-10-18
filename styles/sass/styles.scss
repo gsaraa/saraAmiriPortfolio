@@ -1,2 +1,162 @@
 @import "setup";
 @import "mixin";
+@import "vars";
+
+body {
+    font-family: $bodyFont;
+    font-weight: normal;
+    font-size: 125%;
+    background-color: $offWhite;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+// h1, h2, h3, h4 {
+//     font-family: $headingFont;
+// }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+// ========= HEADER 
+header {
+    height: 100vh;
+}
+
+h1 {
+    font-family: $headingFont;
+    font-size: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $darkGrey;
+}
+
+// ========= NAV
+
+.navigationBar {
+    display: flex;
+    justify-content: space-evenly;
+    // background-color: $sage;
+    border-top: 3px solid $lightGrey;
+    border-bottom: 3px solid $lightGrey;
+    margin-top: 8rem;
+
+    a {
+        color: $darkGrey;
+        margin: 1rem;
+        padding: 0 1rem;
+        
+    }
+
+    a:hover,
+    a:focus {
+        color: $salmon;
+        border-left: 3px solid $lightGrey;
+        border-right: 3px solid $lightGrey;
+    }
+}
+// ========= ABOUT
+.about {
+    display: flex;
+    margin: 3rem 0;
+    
+    .aboutText {
+        width: 70%;
+        margin-left: 5rem;
+        padding: 3rem;
+
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+
+    img {
+        width: 30%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+}
+
+
+// ========= PROJECTS
+.projectList {
+    display: flex;
+    flex-direction: column;
+
+    // .projectOne,
+    // .projectTwo,
+    // .projectThree,
+    // .projectFour {
+    //     background-color: $sage;
+    //     box-shadow: 1rem 1rem 1px $salmon;
+    // }
+
+    .projectTwo,
+    .projectFour {
+        display: flex;
+        justify-content: end;
+    }
+
+    button {
+        background-color: $sage;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 1.5rem;
+    }
+}
+
+// ========= SKILLS 
+.skillsSection {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    li {
+        margin: 2rem 2rem;
+        text-align: center;
+
+        i {
+            font-size: 5rem;
+        }
+
+        li:hover {
+            color: $salmon;
+            font-size: 6rem;
+            transition: all ease-in-out 0.5s;
+            margin: none;
+        }
+
+        p {
+            text-transform: uppercase;
+        }
+    }
+}
+
+// ========= FOOTER
+footer {
+    text-align: center;
+
+    p {
+        margin: 0;
+        padding: 1rem 0;
+    }
+}

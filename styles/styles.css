@@ -234,3 +234,153 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  font-family: "Prata", serif;
+  font-weight: normal;
+  font-size: 125%;
+  background-color: #f0EFED;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+header {
+  height: 100vh;
+}
+
+h1 {
+  font-family: "BioRhyme", serif;
+  font-size: 8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #545454;
+}
+
+.navigationBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-top: 3px solid #868686;
+  border-bottom: 3px solid #868686;
+  margin-top: 8rem;
+}
+.navigationBar a {
+  color: #545454;
+  margin: 1rem;
+  padding: 0 1rem;
+}
+.navigationBar a:hover,
+.navigationBar a:focus {
+  color: #fab4a2;
+  border-left: 3px solid #868686;
+  border-right: 3px solid #868686;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem 0;
+}
+.about .aboutText {
+  width: 70%;
+  margin-left: 5rem;
+  padding: 3rem;
+}
+.about .aboutText h2 {
+  text-transform: uppercase;
+}
+.about img {
+  width: 30%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.projectList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.projectList .projectTwo,
+.projectList .projectFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.projectList button {
+  background-color: #f6fff1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.skillsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skillsSection li {
+  margin: 2rem 2rem;
+  text-align: center;
+}
+.skillsSection li i {
+  font-size: 5rem;
+}
+.skillsSection li li:hover {
+  color: #fab4a2;
+  font-size: 6rem;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  margin: none;
+}
+.skillsSection li p {
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 1rem 0;
+}
