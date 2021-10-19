@@ -239,6 +239,7 @@ body {
   font-family: "Prata", serif;
   font-weight: normal;
   font-size: 125%;
+  line-height: 1.75;
   background-color: #f0EFED;
 }
 
@@ -378,6 +379,46 @@ header .arrow {
   width: 65%;
   padding: 3rem 3rem 3rem 7rem;
   border: 1px solid #868686;
+}
+.projectList .projectOne .projectOneText .languages ul,
+.projectList .projectOne .projectTwoText .languages ul,
+.projectList .projectOne .projectThreeText .languages ul,
+.projectList .projectOne .projectFourText .languages ul,
+.projectList .projectTwo .projectOneText .languages ul,
+.projectList .projectTwo .projectTwoText .languages ul,
+.projectList .projectTwo .projectThreeText .languages ul,
+.projectList .projectTwo .projectFourText .languages ul,
+.projectList .projectThree .projectOneText .languages ul,
+.projectList .projectThree .projectTwoText .languages ul,
+.projectList .projectThree .projectThreeText .languages ul,
+.projectList .projectThree .projectFourText .languages ul,
+.projectList .projectFour .projectOneText .languages ul,
+.projectList .projectFour .projectTwoText .languages ul,
+.projectList .projectFour .projectThreeText .languages ul,
+.projectList .projectFour .projectFourText .languages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projectList .projectOne .projectOneText .languages ul li,
+.projectList .projectOne .projectTwoText .languages ul li,
+.projectList .projectOne .projectThreeText .languages ul li,
+.projectList .projectOne .projectFourText .languages ul li,
+.projectList .projectTwo .projectOneText .languages ul li,
+.projectList .projectTwo .projectTwoText .languages ul li,
+.projectList .projectTwo .projectThreeText .languages ul li,
+.projectList .projectTwo .projectFourText .languages ul li,
+.projectList .projectThree .projectOneText .languages ul li,
+.projectList .projectThree .projectTwoText .languages ul li,
+.projectList .projectThree .projectThreeText .languages ul li,
+.projectList .projectThree .projectFourText .languages ul li,
+.projectList .projectFour .projectOneText .languages ul li,
+.projectList .projectFour .projectTwoText .languages ul li,
+.projectList .projectFour .projectThreeText .languages ul li,
+.projectList .projectFour .projectFourText .languages ul li {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
 }
 .projectList .projectOne img,
 .projectList .projectTwo img,

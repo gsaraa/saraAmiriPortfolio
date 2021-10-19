@@ -6,7 +6,9 @@ body {
     font-family: $bodyFont;
     font-weight: normal;
     font-size: 125%;
+    line-height: 1.75;
     background-color: $offWhite;
+
 }
 
 .wrapper {
@@ -109,7 +111,6 @@ header {
             background-color: $salmon;
             height: .5rem;
         }
-
     }
 
     img {
@@ -118,6 +119,7 @@ header {
         border-top-right-radius: 50%;
     }
 }
+
 // ========= PROJECTS
 .projectList {
     display: flex;
@@ -137,6 +139,16 @@ header {
             width: 65%;
             padding: 3rem 3rem 3rem 7rem;
             border: 1px solid $lightGrey;
+
+            .languages ul {
+                display: flex;
+
+                li {
+                    font-size: .8rem;
+                    margin-right: 1rem;
+                    text-transform: uppercase;
+                }
+            }
         }
 
         img {
