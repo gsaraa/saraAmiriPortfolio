@@ -272,28 +272,33 @@ img {
   text-align: center;
   padding: 2rem;
   font-size: 3rem;
+  color: #b1c7a4;
+}
+
+.aboutArrow,
+.skillsArrow,
+.arrowUp {
+  color: #fab4a2;
 }
 
 header {
-  height: 100vh;
+  height: 90vh;
 }
 header h1 {
-  background-color: #fab4a2;
-  background-size: 4rem 60rem;
   font-family: "BioRhyme", serif;
   font-size: 8rem;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 3rem 0;
+  padding: 1rem 0 3rem 0;
 }
 header p {
-  text-align: center;
+  text-align: right;
 }
 header span {
   display: block;
 }
-header span:before {
+header span::before {
   content: "";
   -webkit-animation: animate infinite 8s;
           animation: animate infinite 8s;
@@ -355,10 +360,10 @@ nav .openNav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border-top: 3px solid #868686;
-  border-bottom: 3px solid #868686;
   margin-top: 4rem;
   position: relative;
+  -webkit-box-shadow: 2px 10px 30px 14px rgba(0, 0, 0, 0.33);
+          box-shadow: 2px 10px 30px 14px rgba(0, 0, 0, 0.33);
 }
 .navigationBar a {
   color: #545454;
