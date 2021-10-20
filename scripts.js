@@ -24,6 +24,8 @@ openNav.addEventListener('click', visibleMenu);
 closeNav.addEventListener('click', unvisibleMenu);
 
 const arrows = document.querySelectorAll('.arrow');
+const arrowUp = document.querySelector('.arrowUp');
+const header = document.querySelector('header');
 
 arrows.forEach((arrow) => {
     arrow.addEventListener('click', function() {
@@ -33,10 +35,16 @@ arrows.forEach((arrow) => {
         } else if (this.classList.contains('projectArrow')) {
             const projectSection = document.querySelector('.projectContainer');
             projectSection.scrollIntoView({behavior: 'smooth'});
-        } 
-        // else {
-        //     const aboutSection = document.querySelector('.aboutContainer');
-        //     aboutSection.scrollIntoView({behavior: 'smooth'});
-        // }
+        } else if (this.classList.contains('skillsArrow')){
+            const skillsSection = document.querySelector('.skillsSection');
+            skillsSection.scrollIntoView({behavior: 'smooth'});
+        } else if (this.classList.contains('contactArrow')) {
+            const contactSection = document.querySelector('.contactSection');
+            contactSection.scrollIntoView({behavior: 'smooth'});
+        }
     })
 })
+
+arrowUp.addEventListener('click', function() {
+    header.scrollIntoView({behavior: 'smooth'});
+});
