@@ -30,10 +30,10 @@ const header = document.querySelector('header');
 arrows.forEach((arrow) => {
     arrow.addEventListener('click', function() {
         if (this.classList.contains('aboutArrow')) {
-            const aboutSection = document.querySelector('.aboutContainer');
+            const aboutSection = document.querySelector('.aboutSection');
             aboutSection.scrollIntoView({behavior: 'smooth'});
         } else if (this.classList.contains('projectArrow')) {
-            const projectSection = document.querySelector('.projectContainer');
+            const projectSection = document.querySelector('.projectSection');
             projectSection.scrollIntoView({behavior: 'smooth'});
         } else if (this.classList.contains('skillsArrow')){
             const skillsSection = document.querySelector('.skillsSection');
