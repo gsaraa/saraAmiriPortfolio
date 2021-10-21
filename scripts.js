@@ -48,3 +48,5 @@ arrows.forEach((arrow) => {
 arrowUp.addEventListener('click', function() {
     header.scrollIntoView({behavior: 'smooth'});
 });
+
+// AOS.init();

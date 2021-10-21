@@ -24,13 +24,16 @@
 
     <header>
         <div class="wrapper">
-            <!-- <p class="helloMsg">Hello All! I am</p> -->
+
+            <!-- <p class="helloMsg">Hello All! <span> I am</span></p> -->
+
             <h1>
                 Sara Amiri
             </h1>
-            
-            <p>
-                and I am a <span></span>
+            <!-- <div class="background"></div> -->
+            <!-- <img src="./background.png" alt="justafo"> -->
+            <p class="developer">
+                Front-end Developer
             </p>
 
             <nav>
@@ -69,7 +72,9 @@
         <div class="wrapper">
             <section class="aboutSection" id="about"> 
                 <!-- About -->
-                <img src="./placeholder.jpg" alt="placeholder">
+                <div class="aboutImg">
+                    <img src="./placeholder.jpg" alt="placeholder">
+                </div>
 
                 <div class="aboutText"> 
                     <h2>
@@ -77,7 +82,15 @@
                     </h2>
     
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ducimus qui laboriosam, molestias amet eligendi dolore vitae sint non consequatur nesciunt assumenda fugit odit delectus officiis cumque sequi, ad eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat maiores id aliquam earum impedit. Dignissimos illum ullam atque omnis quos eveniet optio dolorum natus! Tempore blanditiis molestiae reiciendis a dolorum.
+                        Oh hello there! I am Sara and I am a front-end developer based in Toronto, Ontario. 
+                    </p>
+
+                    <p>
+                        Due to my creative background in hairstyling, I have always been passionate about design and with my extensive customer service background, I am passionate about building responsive and accessible websites. My transition to tech felt very natural as I am a fast-learner and always eager to solve complex problems.
+                    </p>
+
+                    <p>
+                        When I am not coding, you can find me trying new recipes 👩🏼‍🍳 , going on hikes 🥾 or trying new hairstyles on my clients 💇🏻‍♀️
                     </p>
                 </div>
             </section>
@@ -99,7 +112,9 @@
 
                     <div class="projectOne">
 
-                        <img src="./placeholder.jpg" alt="">
+                        <div class="projectOneImg">
+                            <img src="./placeholder.jpg" alt="">
+                        </div>
 
                         <div class="projectOneText">
                             <h3>
@@ -133,7 +148,10 @@
                     </div>
 
                     <div class="projectTwo">
-                        <img src="./placeholder.jpg" alt="">
+
+                        <div class="projectTwoImg">
+                            <img src="./placeholder.jpg" alt="">
+                        </div>
 
                         <div class="projectTwoText">
                             <h3>
@@ -167,7 +185,10 @@
                     </div>
 
                     <div class="projectThree">
-                        <img src="./placeholder.jpg" alt="">
+
+                        <div class="projectThreeImg">
+                            <img src="./placeholder.jpg" alt="">
+                        </div>
 
                         <div class="projectThreeText">
                             <h3>
@@ -199,7 +220,10 @@
                     </div>
 
                     <div class="projectFour">
-                        <img src="./Screen Shot 2021-10-19 at 11.07.54 PM.png" alt="">
+
+                        <div class="projectFourImg">
+                            <img src="./Screen Shot 2021-10-19 at 11.07.54 PM.png" alt="">
+                        </div>
                         
                         <div class="projectFourText">
                             <h3>
@@ -322,23 +346,36 @@
                 <h4>
                     Get in touch!
                 </h4>
+                <div class="formContainer">
 
-                <p>
+                    <div class="formText">
+                        <p>
+                            Want to build something together, inquire about something I've built or just want to chat? Feel free to reach out
+                        </p>
+    
+                        <p>
+                            I'd love to hear from you!
+                        </p>
+    
+                    </div>
+    
+                    <form id="form" name="contactForm" accept-charset="utf-8" action="https://formspree.io/f/xgerbzjw" method="post">
+                        <div class="inputs">
+                            <label for="name" class="sr-only">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required="">
+                            <label for="emailAddress" class="sr-only">Email Address</label>
+                            <input type="email" name="email" id="emailAddress" placeholder="Your Email" required="">
+                        </div>
 
-                </p>
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" placeholder="Let's chat!" required=""></textarea>
 
-                <form action="#">
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
+                        <button type="submit">Send Message</button>
+                            <!-- <input type="submit" value="Submit"> -->
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
+                    </form>
 
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-
-                    <button type="submit">Let's chat!</button>
-                </form>
+                </div>
             </div>
         </section>
 
@@ -355,5 +392,6 @@
     </footer>
 
     <script src="./scripts.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 </body>
 </html>
