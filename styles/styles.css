@@ -312,12 +312,14 @@ header .helloMsg span {
   padding-left: 2rem;
 }
 header h1 {
+  color: #fab4a2;
   font-size: 8rem;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   margin: 0;
 }
 header .developer {
+  font-size: 3rem;
   text-align: right;
   color: #b1c7a4;
 }
@@ -391,21 +393,23 @@ nav .openNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5rem 0 2rem 0;
+  margin-top: 5rem;
   padding: 2rem;
 }
 .aboutSection .aboutImg {
-  width: 40%;
+  width: 35%;
 }
 .aboutSection .aboutImg img {
-  height: 90%;
+  height: 100%;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
 }
 .aboutSection .aboutText {
-  width: 60%;
+  width: 65%;
   margin-left: 4rem;
-  padding: 3rem;
+}
+.aboutSection .aboutText h2 {
+  margin: 1rem 0;
 }
 .aboutSection .aboutText h2::before {
   width: 60%;
@@ -906,6 +910,9 @@ h4::before {
   .formContainer .formText,
 .formContainer form {
     width: 100%;
+  }
+  .formContainer form {
+    margin: 0;
   }
 }
 @media (max-width: 625px) {

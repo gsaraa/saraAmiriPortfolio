@@ -1,15 +1,10 @@
-// Create an portfolio object
 // Use querySelector to cache arrow divs
 // Add event listener so on click, it scrolls to next section
-
+// Get form element and empty after user submits
 
 const navigationBar = document.querySelector('.navigationBar');
 const openNav = document.querySelector('.openNav');
 const closeNav = document.querySelector('.closeNav');
-
-// window.addEventListener('scroll', function() {
-//     navigationBar.classList.toggle('sticky', window.scrollY > 0);
-// })
 
 function visibleMenu() {
     navigationBar.classList.add('responsiveBar');
@@ -41,6 +36,8 @@ arrows.forEach((arrow) => {
         } else if (this.classList.contains('contactArrow')) {
             const contactSection = document.querySelector('.contactSection');
             contactSection.scrollIntoView({behavior: 'smooth'});
+        } else {
+            null
         }
     })
 })
@@ -48,5 +45,17 @@ arrows.forEach((arrow) => {
 arrowUp.addEventListener('click', function() {
     header.scrollIntoView({behavior: 'smooth'});
 });
+
+const formEl = document.querySelector('form');
+
+formEl.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    formEl.reset();
+});
+
+window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
 
 // AOS.init();

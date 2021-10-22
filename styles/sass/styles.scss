@@ -81,22 +81,16 @@ header {
         }
     }
 
-    // .background {
-    //     background: url(../background.png);        
-    //     height: 20rem;
-    // }
-
     h1 {
-        // font-family: $headingFont;
+        color: $salmon;
         font-size: 8rem;
-        text-align: center;
+        text-align: right;
         text-transform: uppercase;
         margin: 0;
-        // background: url(../background);
-        // padding: 1rem 0 3rem 0;
     }
 
     .developer {
+        font-size: 3rem;
         text-align: right;
         color: $sage;
     }
@@ -185,23 +179,27 @@ nav .openNav {
 .aboutSection {
     display: flex;
     // height: 80vh;
-    margin: 5rem 0 2rem 0;
+    margin-top: 5rem;
     padding: 2rem;
 
     .aboutImg {
-        width: 40%;
+        width: 35%;
         
         img {
-            height: 90%;
+            height: 100%;
             border-top-left-radius: 50%;
             border-top-right-radius: 50%;
         }
     }
 
     .aboutText {
-        width: 60%;
+        width: 65%;
         margin-left: 4rem;
-        padding: 3rem;
+        // padding: 3rem;
+
+        h2 {
+            margin: 1rem 0;
+        }
 
         h2::before {
             width: 60%;
@@ -657,6 +655,10 @@ footer {
         .formText,
         form {
             width: 100%;
+        }
+
+        form {
+            margin: 0;
         }
     }
 }
