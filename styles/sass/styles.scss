@@ -69,6 +69,7 @@ img {
 // ========= HEADER 
 header {
     height: 90vh;
+    background-image: url($png);
     
     .helloMsg {
         text-align: left;
@@ -83,12 +84,14 @@ header {
     }
 
     h1 {
+        // background-image: url($png);
         color: $salmon;
         font-size: 8rem;
         text-align: right;
         text-transform: uppercase;
         margin: 0;
     }
+
 
     .developer {
         font-size: 3rem;

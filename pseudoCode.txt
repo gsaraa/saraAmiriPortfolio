@@ -1,0 +1,6 @@
+Add animation to the header
+Add colour either to the sides or somewhere
+Add to about section 
+Ask about form section 
+
+Ask about why doesn't my hamburger menu not work at 480px
