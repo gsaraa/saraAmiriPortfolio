@@ -36,8 +36,6 @@ arrows.forEach((arrow) => {
         } else if (this.classList.contains('contactArrow')) {
             const contactSection = document.querySelector('.contactSection');
             contactSection.scrollIntoView({behavior: 'smooth'});
-        } else {
-            null
         }
     })
 })
@@ -57,5 +55,3 @@ formEl.addEventListener('submit', function(e) {
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
 };
-
-// AOS.init();
