@@ -309,6 +309,10 @@ header h1 {
   text-transform: uppercase;
   margin: 5rem 0 0 0;
 }
+header h1::before {
+  height: 9rem;
+  background-image: url(../assets/woman.png);
+}
 header .developer {
   font-family: "BioRhyme", serif;
   font-size: 3rem;
@@ -539,7 +543,11 @@ nav .openNav {
 .projectOne:hover,
 .projectTwo:hover,
 .projectThree:hover,
-.projectFour:hover {
+.projectFour:hover,
+.projectOne:active,
+.projectTwo:active,
+.projectThree:active,
+.projectFour:active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all 0.5s ease;
@@ -550,43 +558,71 @@ nav .openNav {
 .projectOne:hover .html,
 .projectTwo:hover .html,
 .projectThree:hover .html,
-.projectFour:hover .html {
+.projectFour:hover .html,
+.projectOne:active .html,
+.projectTwo:active .html,
+.projectThree:active .html,
+.projectFour:active .html {
   color: #e34c26;
 }
 .projectOne:hover .css,
 .projectTwo:hover .css,
 .projectThree:hover .css,
-.projectFour:hover .css {
+.projectFour:hover .css,
+.projectOne:active .css,
+.projectTwo:active .css,
+.projectThree:active .css,
+.projectFour:active .css {
   color: #264de4;
 }
 .projectOne:hover .sass,
 .projectTwo:hover .sass,
 .projectThree:hover .sass,
-.projectFour:hover .sass {
+.projectFour:hover .sass,
+.projectOne:active .sass,
+.projectTwo:active .sass,
+.projectThree:active .sass,
+.projectFour:active .sass {
   color: #cc6699;
 }
 .projectOne:hover .js,
 .projectTwo:hover .js,
 .projectThree:hover .js,
-.projectFour:hover .js {
+.projectFour:hover .js,
+.projectOne:active .js,
+.projectTwo:active .js,
+.projectThree:active .js,
+.projectFour:active .js {
   color: #f0db4f;
 }
 .projectOne:hover .react,
 .projectTwo:hover .react,
 .projectThree:hover .react,
-.projectFour:hover .react {
+.projectFour:hover .react,
+.projectOne:active .react,
+.projectTwo:active .react,
+.projectThree:active .react,
+.projectFour:active .react {
   color: #88dded;
 }
 .projectOne:hover .firebase,
 .projectTwo:hover .firebase,
 .projectThree:hover .firebase,
-.projectFour:hover .firebase {
+.projectFour:hover .firebase,
+.projectOne:active .firebase,
+.projectTwo:active .firebase,
+.projectThree:active .firebase,
+.projectFour:active .firebase {
   color: #FFA611;
 }
 .projectOne:hover .api,
 .projectTwo:hover .api,
 .projectThree:hover .api,
-.projectFour:hover .api {
+.projectFour:hover .api,
+.projectOne:active .api,
+.projectTwo:active .api,
+.projectThree:active .api,
+.projectFour:active .api {
   color: #868686;
 }
 
@@ -911,7 +947,7 @@ h4::before {
   }
 
   header {
-    padding: 6rem 0;
+    padding: 3rem 0;
   }
   header h1 {
     margin-top: 2.5rem;
@@ -934,6 +970,9 @@ h4::before {
     margin-top: 0;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
+  }
+  .navigationBar a {
+    margin: 0 1rem;
   }
 
   .responsiveBar {
