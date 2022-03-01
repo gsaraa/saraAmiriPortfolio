@@ -674,6 +674,11 @@ nav .openNav {
 .formContainer .formText {
   width: 40%;
 }
+.formContainer .socials a {
+  color: #fab4a2;
+  font-size: 2rem;
+  margin-right: 3rem;
+}
 .formContainer form {
   width: 60%;
   display: -webkit-box;

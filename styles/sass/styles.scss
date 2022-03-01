@@ -155,17 +155,14 @@ nav .openNav {
         width: 30%;
         
         img {
-            // height: 100%;
             border-top-left-radius: 40%;
             border-top-right-radius: 40%;
-            // object-fit: contain;
         }
     }
 
     .aboutText {
         width: 70%;
         margin-left: 4rem;
-        // padding: 3rem;
 
         h2 {
             margin: 1rem 0;
@@ -207,7 +204,6 @@ nav .openNav {
     .projectFour {
         display: flex;
         margin: 1.5rem 0;
-        // height: 25rem;
 
         .projectOneText,
         .projectTwoText,
@@ -348,6 +344,14 @@ nav .openNav {
 
     .formText {
         width: 40%;
+    }
+
+    .socials {
+        a {
+            color: $salmon;
+            font-size: 2rem;
+            margin-right: 3rem;
+        }
     }
 
     form {

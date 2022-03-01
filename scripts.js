@@ -55,3 +55,5 @@ formEl.addEventListener('submit', function(e) {
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
 };
+console.log('hello');
+AOS.init();
