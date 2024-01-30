@@ -4,7 +4,7 @@ const NavBar = () => {
 
 	return (
 		<>
-            <nav>
+            <nav className="wrapper">
                 <div class="openNav"><i class="fas fa-bars"></i></div>
 
                 <ul class="navigationBar">
