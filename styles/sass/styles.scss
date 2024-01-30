@@ -66,14 +66,14 @@ img {
 }
 
 .aboutImg {
-    width: 30%;
+    width: 25%;
     position: absolute;
 
     img {
         position: relative;
         left: 35vw;
-        border-top-left-radius: 40%;
-        border-top-right-radius: 40%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
     }
 }
 
@@ -89,7 +89,7 @@ img {
             color: $salmon;
             font-size: 8rem;
             text-align: center;
-            padding-top: 55%;
+            padding-top: 37%;
             margin: 0 auto;
             line-height: 1;
             text-transform: uppercase;
