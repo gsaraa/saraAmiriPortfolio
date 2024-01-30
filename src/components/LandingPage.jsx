@@ -1,6 +1,6 @@
 import React from "react";
 
-import me from "../../public/assets/me.jpg";
+import me from "../../public/assets/me2.png";
 
 const LandingPage = () => {
 	return (
